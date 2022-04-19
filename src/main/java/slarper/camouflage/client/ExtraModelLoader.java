@@ -19,7 +19,7 @@ import java.util.List;
 @Environment(EnvType.CLIENT)
 public class ExtraModelLoader {
     public final static Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    public static final String CONFIG_PATH = "nbtmodel:extra/models.json";
+    public static final String CONFIG_PATH = "camouflage:extra/models.json";
 
     public static void load(){
         ModelLoadingRegistry.INSTANCE.registerModelProvider(
