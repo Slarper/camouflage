@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "camouflage",
   "version": "${version}",
 
   "name": "Example Mod",
@@ -14,16 +14,19 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/camouflage/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "slarper.camouflage.Camouflage"
+    ],
+    "client": [
+      "slarper.camouflage.client.CamouflageClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "camouflage.mixins.json"
   ],
 
   "depends": {
