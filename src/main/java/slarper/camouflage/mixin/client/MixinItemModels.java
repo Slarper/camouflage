@@ -38,6 +38,10 @@ public abstract class MixinItemModels {
             String model = nbt.getString(Camouflage.MODEL_KEY);
             if (!model.equals("")){
                 BakedModel bakedModel = null;
+                // if the model is an item model
+                // its form is "<namespace>:<item_id>"
+                // if the model is an extra model
+                // its form is "<namespace>:item/<item_id>"
                 try {
                     Identifier id = new Identifier(model);
                     if (Registry.ITEM.containsId(id)){
